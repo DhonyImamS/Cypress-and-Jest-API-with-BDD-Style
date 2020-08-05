@@ -1,0 +1,8 @@
+{
+    "devDependencies": {
+        "fs": "0.0.1-security"
+    },
+    "dependencies": {
+        "archiver": "^5.0.0"
+    }
+}
