@@ -1,5 +1,6 @@
 const fs = require('fs');
 const archiver = require('archiver');
+const { type } = require('os');
 
 async function archieveService(config, extensitonFile) {
         const {
@@ -46,14 +47,17 @@ async function archieving(archieveMode, targetExtention) {
                 mode: 'unsupported feature archieving'
             };
             break;
-    } 
-
-    if (config.mode !== 'unsupported feature archieving') {
-        await archieveService(config, targetExtention);
-    } else {
-        console.log('Currently Only zip and tar mode archieve');
     }
-    
+
+    if(typeof targetExtention !== 'string'|| targetExtention === '') {
+        console.log('Please check your typing in File Extension');
+    } else {
+        if (config.mode !== 'unsupported feature archieving') {
+            await archieveService(config, targetExtention.split('.').pop().toLowerCase());
+        } else {
+            console.log('Currently Only zip and tar mode archieve');
+        }
+    } 
 };
 
-archieving('zip','txt');
+archieving('zip','JS');
