@@ -1,6 +1,8 @@
 {
     "devDependencies": {
-        "fs": "0.0.1-security"
+        "fs": "0.0.1-security",
+        "jest": "^26.2.2",
+        "jest-cli": "^26.2.2"
     },
     "dependencies": {
         "archiver": "^5.0.0"
