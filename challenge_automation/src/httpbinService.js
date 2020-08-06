@@ -10,6 +10,33 @@ function getAnything(token, datamock) {
         .send(JSON.stringify(datamock));
 }
 
+function deleteAnything(token, datamock) {
+    return api.delete(`${path}`)
+        .set('Accept', 'application/json')
+        .set('Content-Type', 'application/json')
+        .set('Authorization', token)
+        .send(JSON.stringify(datamock));
+}
+
+function postAnything(token, datamock) {
+    return api.post(`${path}`)
+        .set('Accept', 'application/json')
+        .set('Content-Type', 'application/json')
+        .set('Authorization', token)
+        .send(JSON.stringify(datamock));
+}
+
+function putAnything(token, datamock) {
+    return api.put(`${path}`)
+        .set('Accept', 'application/json')
+        .set('Content-Type', 'application/json')
+        .set('Authorization', token)
+        .send(JSON.stringify(datamock));
+}
+
 module.exports = {
-    getAnything
+    getAnything,
+    deleteAnything,
+    postAnything,
+    putAnything
 };
