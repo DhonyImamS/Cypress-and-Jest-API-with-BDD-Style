@@ -7,21 +7,19 @@
     },
     "scripts": {
         "jest": "./node_modules/.bin/jest",
-        "cypress": "./node_modules/.bin/cypress run",
-        "cypress:open": "npm run cypress open",
-        "test:jest": "npm run jest -- --config ./package.json",
-        "test:cypress": "npx cypress run"
+        "test:jest": "npm run jest -- --config ./package.json"
     },
     "devDependencies": {
-        "cypress": "^4.12.1",
         "fs": "0.0.1-security"
     },
     "dependencies": {
         "archiver": "^5.0.0",
-        "chai": "^4.2.0",
         "jest": "^26.2.2",
         "jest-cli": "^26.2.2",
         "jest-cucumber": "^3.0.0",
         "supertest": "^4.0.2"
+    },
+    "cypress-cucumber-preprocessor": {
+        "nonGlobalStepDefinitions": false
     }
 }

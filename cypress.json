@@ -1,5 +1,6 @@
 {
     "baseUrl": "https://qa.fabelio.com/",
-    "integrationFolder": "./challenge_automation/integrationTest",
-    "testFiles": "**/*_spec.js"
+    "integrationFolder": "./challenge_automation/integration",
+    "testFiles": "**/*.feature",
+    "trashAssetsBeforeRuns": true
 }
