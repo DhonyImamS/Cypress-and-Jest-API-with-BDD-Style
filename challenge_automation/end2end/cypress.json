@@ -1,5 +1,6 @@
 {
     "baseUrl": "https://qa.fabelio.com/",
     "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 40000,
     "trashAssetsBeforeRuns": true
 }
