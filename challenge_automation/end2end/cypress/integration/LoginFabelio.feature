@@ -1,7 +1,7 @@
-Feature: LOG IN FABELIO WEBSITE
+Feature: ADD TO CART RESULT SEARCH PRODUK FABELIO WEBSITE
 
-    Scenario: Logged In with Invalid Username and Password
-        Given I Open Login Page website QA FABELIO
-        When I do input "dhony@gmail.com" and "password"
-        And I click button login
-        Then I see error "Mohon periksa kembali alamat email / password anda." on LoginPage
+    Scenario: Search Produk and Add to Cart
+        Given I Open Home Page website QA FABELIO
+        Then I search "Cessi" from searchbox product
+        And I choose product "Cessi Dining Chair"
+        # And I click TambahKeranjang for AddToCart
