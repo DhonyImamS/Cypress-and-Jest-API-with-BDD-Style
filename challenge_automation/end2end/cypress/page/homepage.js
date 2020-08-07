@@ -1,7 +1,7 @@
 class HomePage {
 
-    static navigatePage() {
-        cy.visit();
+    static navigatePage(urls) {
+        cy.visit(`${Cypress.config().baseUrl}${urls}`);
     }
 
     static action(actionType) {
