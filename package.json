@@ -7,7 +7,8 @@
     },
     "scripts": {
         "jest": "./node_modules/.bin/jest",
-        "test:jest": "npm run jest -- --config ./package.json"
+        "test": "npm run jest -- --config ./package.json",
+        "test:ui": "cd challenge_automation/end2end && npm run cypress:test"
     },
     "devDependencies": {
         "fs": "0.0.1-security"
