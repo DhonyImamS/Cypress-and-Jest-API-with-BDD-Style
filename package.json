@@ -14,6 +14,7 @@
     },
     "dependencies": {
         "archiver": "^5.0.0",
+        "chai": "^4.2.0",
         "jest": "^26.2.2",
         "jest-cli": "^26.2.2",
         "jest-cucumber": "^3.0.0",
