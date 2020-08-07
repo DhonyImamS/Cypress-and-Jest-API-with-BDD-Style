@@ -6,9 +6,13 @@
         ]
     },
     "scripts": {
-        "test": "jest --config ./package.json"
+        "jest": "./node_modules/.bin/jest",
+        "cypress": "./node_modules/.bin/cypress",
+        "test:jest": "npm run jest -- --config ./package.json",
+        "cypress:open": "npm run cypress open"
     },
     "devDependencies": {
+        "cypress": "^4.12.1",
         "fs": "0.0.1-security"
     },
     "dependencies": {
