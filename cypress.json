@@ -1,3 +1,5 @@
 {
-    "baseUrl": "https://qa.fabelio.com/"
+    "baseUrl": "https://qa.fabelio.com/",
+    "integrationFolder": "./challenge_automation/integrationTest",
+    "testFiles": "**/*_spec.js"
 }

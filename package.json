@@ -7,9 +7,10 @@
     },
     "scripts": {
         "jest": "./node_modules/.bin/jest",
-        "cypress": "./node_modules/.bin/cypress",
+        "cypress": "./node_modules/.bin/cypress run",
+        "cypress:open": "npm run cypress open",
         "test:jest": "npm run jest -- --config ./package.json",
-        "cypress:open": "npm run cypress open"
+        "test:cypress": "npx cypress run"
     },
     "devDependencies": {
         "cypress": "^4.12.1",
