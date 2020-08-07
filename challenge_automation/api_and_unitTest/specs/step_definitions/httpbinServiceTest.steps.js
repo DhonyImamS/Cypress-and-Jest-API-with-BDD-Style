@@ -1,5 +1,5 @@
 const { defineFeature, loadFeature, autoBindSteps } =  require('jest-cucumber');
-const feature = loadFeature('./challenge_automation/specs/features/httpbinServiceTest.feature');
+const feature = loadFeature('./challenge_automation/api_and_unitTest/specs/features/httpbinServiceTest.feature');
 const httpService = require('../../src/httpbinService');
 
 
