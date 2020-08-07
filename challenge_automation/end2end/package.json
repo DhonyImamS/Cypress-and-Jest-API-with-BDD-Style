@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "cypress": "./node_modules/.bin/cypress",
+        "cypress:open": "npm run cypress open",
+        "test:cypress": "npm run cypress run"
+    },
+    "devDependencies": {
+        "cypress": "^4.12.1"
+    },
+    "dependencies": {
+        "cypress-cucumber-preprocessor": "^2.5.4"
+    }
+}

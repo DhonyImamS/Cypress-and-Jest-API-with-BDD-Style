@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://qa.fabelio.com/",
+    "testFiles": "**/*.feature",
+    "trashAssetsBeforeRuns": true
+}
