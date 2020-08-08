@@ -1,10 +1,10 @@
 {
     "scripts": {
-        "cypress": "./node_modules/.bin/cypress",
-        "cypress-tag": "./node_modules/.bin/cypress-tags",
+        "cypress": "./node_modules/.bin/cypress run",
+        "cypress-tag": "./node_modules/.bin/cypress-tags run -e",
         "cypress:open": "npm run cypress open",
-        "cypress:test": "npm run cypress run",
-        "cypress:tag": "npm run cypress-tag run"
+        "cypress:test": "npm run cypress",
+        "cypress:tag": "npm run cypress-tag"
     },
     "devDependencies": {
         "cypress": "^4.12.1"

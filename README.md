@@ -11,3 +11,4 @@ Guide Running:
 0. On the Root Folder type in npm install
 1. For doing API or Function Test just type npm run test
 2. For doing UI Automation Test just type npm run test:ui
+3. For doing UI Automation Test by TAG, just type npm run test:ui:tag -- TAGS='@yourTag'
