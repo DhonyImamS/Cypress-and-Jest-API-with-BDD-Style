@@ -11,7 +11,7 @@ class HomePage {
 
     static searchProduk(produkName) {
         cy.get('img[alt="magnifier icon"]').click();
-        cy.get('input[placeHolder="Cari produk"]').type(produkName).type('{enter}');
+        cy.get('input[placeHolder="Cari produk"]').click().focused().clear().type(produkName).type('{enter}');
     }
 
     static findProductFromList(produkName) {
@@ -23,6 +23,10 @@ class HomePage {
                 }
             }));
         });        
+    }
+
+    static findSingleProduct() {
+        cy.get(`div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-2 > div:nth-child(1) > section[data-test="product"] a.no-highlight img`).click();
     }
 
     static assertionText(textInput) {

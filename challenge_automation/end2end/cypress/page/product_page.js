@@ -5,7 +5,7 @@ class ProductPage {
     }
 
     static tambahKeTroli() {
-        cy.get('button[id="addToCart"]').click();
+        cy.get('button').find('#addToCart .MuiButton-label').click();
         cy.screenshot();
     }
 

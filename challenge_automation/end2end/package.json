@@ -10,7 +10,8 @@
         "cypress": "^4.12.1"
     },
     "dependencies": {
-        "cypress-cucumber-preprocessor": "^2.5.4"
+        "cypress-cucumber-preprocessor": "^2.5.4",
+        "fs": "0.0.1-security"
     },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
